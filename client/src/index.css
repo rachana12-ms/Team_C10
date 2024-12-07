@@ -1,0 +1,103 @@
+/* index.css */
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body and Global Styles */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* App Container */
+  .App {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+  }
+  
+  /* Heading */
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #007BFF;
+  }
+  
+  /* Form and Input Fields */
+  input[type="text"],
+  input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  button {
+    padding: 10px 15px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 5px 0;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Employee List Styling */
+  .employee-list {
+    margin-top: 20px;
+  }
+  
+  .employee {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    margin: 10px 0;
+    padding: 15px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .employee h3 {
+    margin: 0;
+    font-size: 18px;
+  }
+  
+  .employee p {
+    font-size: 16px;
+    margin: 5px 0;
+  }
+  
+  .employee button {
+    margin-right: 10px;
+  }
+  
+  .employee input {
+    width: 70%;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .App {
+      padding: 15px;
+    }
+  
+    input[type="text"], input[type="number"], button {
+      font-size: 14px;
+    }
+  }
+  

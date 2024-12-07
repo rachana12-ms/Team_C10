@@ -1,0 +1,111 @@
+/* General styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+.App {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Form styling */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px; /* Equal spacing between form elements */
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column; /* Align items horizontally */
+  align-items: center; /* Vertically center align the labels and inputs */
+  gap: 20px; /* Space between label and input box */
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+label {
+  font-weight: bold;
+  min-width: 80px; /* Fixed width for labels to align them */
+}
+
+input {
+  padding: 8px;
+  margin: 5px 0;
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px 15px;
+  margin: 5px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  max-width: 150px; /* Limit max width */
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Employee list styling */
+.employee-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Equal spacing between each employee */
+  margin-top: 20px;
+}
+
+.employee {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: #ffffff;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  text-align: left;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto; /* Center the employee cards */
+}
+
+.employee h2,
+.employee h3 {
+  margin: 0;
+}
+
+.employee h3 {
+  margin-top: 5px;
+}
+
+/* Adjust input field width */
+input[type="text"] {
+  width: 100%;
+  max-width: 250px; /* Keep a limit on input field width */
+}
+
+/* Align form elements on larger screens */
+@media (min-width: 768px) {
+  .App {
+    max-width: 900px;
+  }
+
+  button {
+    width: auto;
+    max-width: none; /* Remove max-width on larger screens */
+  }
+}
+
